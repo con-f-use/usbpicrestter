@@ -1,0 +1,235 @@
+(pcb /home/confus/kicad/usbpicsetter/usbpicsetter.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "no-vcs-found-product")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 130069 -111055 160761 -133730)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Capacitors_SMD:C_0603_HandSoldering
+      (place 100n1 146050 -121920 front 180 (PN C))
+    )
+    (component "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6"
+      (place IC1 146050 -117475 front 0 (PN "PIC10F200-I/OT"))
+    )
+    (component "Connect:USB_Micro-B"
+      (place P1 138430 -128905 front 270 (PN USB_OTG))
+      (place P2 152400 -128905 front 90 (PN USB_OTG))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x05
+      (place P3 151130 -113030 front 270 (PN CONN_01X05))
+    )
+    (component "Housings_SOT-23_SOT-143_TSOT-6:SOT-23"
+      (place Q1 154305 -120015 front 180 (PN MOS_P_GSD))
+    )
+  )
+  (library
+    (image Capacitors_SMD:C_0603_HandSoldering
+      (outline (path signal 50  -1850 750  1850 750))
+      (outline (path signal 50  -1850 -750  1850 -750))
+      (outline (path signal 50  -1850 750  -1850 -750))
+      (outline (path signal 50  1850 750  1850 -750))
+      (outline (path signal 150  -350 600  350 600))
+      (outline (path signal 150  350 -600  -350 -600))
+      (pin Rect[T]Pad_1200x750_um 1 -950 0)
+      (pin Rect[T]Pad_1200x750_um 2 950 0)
+    )
+    (image "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6"
+      (outline (path signal 150  -300 1700  -304.894 1669.1  -319.098 1641.22  -341.221 1619.1
+            -369.098 1604.89  -400 1600  -430.902 1604.89  -458.779 1619.1
+            -480.902 1641.22  -495.106 1669.1  -500 1700  -495.106 1730.9
+            -480.902 1758.78  -458.779 1780.9  -430.902 1795.11  -400 1800
+            -369.098 1795.11  -341.221 1780.9  -319.098 1758.78  -304.894 1730.9))
+      (outline (path signal 150  250 1450  -250 1450))
+      (outline (path signal 150  250 -1450  250 1450))
+      (outline (path signal 150  -250 -1450  250 -1450))
+      (outline (path signal 150  -250 1450  -250 -1450))
+      (pin Rect[T]Pad_1060x650_um 1 -1100 950)
+      (pin Rect[T]Pad_1060x650_um 2 -1100 0)
+      (pin Rect[T]Pad_1060x650_um 3 -1100 -950)
+      (pin Rect[T]Pad_1060x650_um 4 1100 -950)
+      (pin Rect[T]Pad_1060x650_um 6 1100 950)
+      (pin Rect[T]Pad_1060x650_um 5 1100 0)
+    )
+    (image "Connect:USB_Micro-B"
+      (outline (path signal 50  -4600 2800  4600 2800))
+      (outline (path signal 50  4600 2800  4600 -4050))
+      (outline (path signal 50  4600 -4050  -4600 -4050))
+      (outline (path signal 50  -4600 -4050  -4600 2800))
+      (outline (path signal 150  -4350.9 -3817.46  4349.1 -3817.46))
+      (outline (path signal 150  -4350.9 2587.54  4349.1 2587.54))
+      (outline (path signal 150  4349.1 2587.54  4349.1 -3817.46))
+      (outline (path signal 150  4349.1 -2587.46  -4350.9 -2587.46))
+      (outline (path signal 150  -4350.9 -3817.46  -4350.9 2587.54))
+      (pin Rect[T]Pad_1350x400_um (rotate 90) 1 -1300.9 1562.54)
+      (pin Rect[T]Pad_1350x400_um (rotate 90) 2 -650.9 1562.54)
+      (pin Rect[T]Pad_1350x400_um (rotate 90) 3 -0.9 1562.54)
+      (pin Rect[T]Pad_1350x400_um (rotate 90) 4 649.1 1562.54)
+      (pin Rect[T]Pad_1350x400_um (rotate 90) 5 1299.1 1562.54)
+      (pin Oval[A]Pad_950x1250_um (rotate 90) 6 -2500.9 1562.54)
+      (pin Oval[A]Pad_950x1250_um (rotate 90) 6@1 2499.1 1562.54)
+      (pin Oval[A]Pad_1550x1000_um (rotate 90) 6@2 -3500.9 -1137.46)
+      (pin Oval[A]Pad_1550x1000_um (rotate 90) 6@3 3499.1 -1137.46)
+    )
+    (image Pin_Headers:Pin_Header_Straight_1x05
+      (outline (path signal 150  -1550 0  -1550 1550))
+      (outline (path signal 150  -1550 1550  1550 1550))
+      (outline (path signal 150  1550 1550  1550 0))
+      (outline (path signal 50  -1750 1750  -1750 -11950))
+      (outline (path signal 50  1750 1750  1750 -11950))
+      (outline (path signal 50  -1750 1750  1750 1750))
+      (outline (path signal 50  -1750 -11950  1750 -11950))
+      (outline (path signal 150  1270 -1270  1270 -11430))
+      (outline (path signal 150  1270 -11430  -1270 -11430))
+      (outline (path signal 150  -1270 -11430  -1270 -1270))
+      (outline (path signal 150  1270 -1270  -1270 -1270))
+      (pin Rect[A]Pad_2032x1727.2_um 1 0 0)
+      (pin Oval[A]Pad_2032x1727.2_um 2 0 -2540)
+      (pin Oval[A]Pad_2032x1727.2_um 3 0 -5080)
+      (pin Oval[A]Pad_2032x1727.2_um 4 0 -7620)
+      (pin Oval[A]Pad_2032x1727.2_um 5 0 -10160)
+    )
+    (image "Housings_SOT-23_SOT-143_TSOT-6:SOT-23"
+      (outline (path signal 50  -1650 1600  1650 1600))
+      (outline (path signal 50  1650 1600  1650 -1600))
+      (outline (path signal 50  1650 -1600  -1650 -1600))
+      (outline (path signal 50  -1650 -1600  -1650 1600))
+      (outline (path signal 150  1299.16 650.24  1250.9 650.24))
+      (outline (path signal 150  -1499.82 -50.8  -1499.82 650.24))
+      (outline (path signal 150  -1499.82 650.24  -1250.9 650.24))
+      (outline (path signal 150  1299.16 650.24  1499.82 650.24))
+      (outline (path signal 150  1499.82 650.24  1499.82 -50.8))
+      (pin Rect[T]Pad_800.1x800.1_um 1 -950 -1000.76)
+      (pin Rect[T]Pad_800.1x800.1_um 2 950 -1000.76)
+      (pin Rect[T]Pad_800.1x800.1_um 3 0 998.22)
+    )
+    (padstack Oval[A]Pad_1550x1000_um
+      (shape (path F.Cu 1000  -275 0  275 0))
+      (shape (path B.Cu 1000  -275 0  275 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2032x1727.2_um
+      (shape (path F.Cu 1727.2  -152.4 0  152.4 0))
+      (shape (path B.Cu 1727.2  -152.4 0  152.4 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_950x1250_um
+      (shape (path F.Cu 950  0 -150  0 150))
+      (shape (path B.Cu 950  0 -150  0 150))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2032x1727.2_um
+      (shape (rect F.Cu -1016 -863.6 1016 863.6))
+      (shape (rect B.Cu -1016 -863.6 1016 863.6))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_800.1x800.1_um
+      (shape (rect F.Cu -400.05 -400.05 400.05 400.05))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1060x650_um
+      (shape (rect F.Cu -530 -325 530 325))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1200x750_um
+      (shape (rect F.Cu -600 -375 600 375))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1350x400_um
+      (shape (rect F.Cu -675 -200 675 200))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net VCC
+      (pins 100n1-1 IC1-5 P3-2)
+    )
+    (net GND
+      (pins 100n1-2 IC1-2 P3-3)
+    )
+    (net "Net-(IC1-Pad1)"
+      (pins IC1-1 P3-4 Q1-1)
+    )
+    (net "Net-(IC1-Pad3)"
+      (pins IC1-3 P3-5)
+    )
+    (net "Net-(IC1-Pad4)"
+      (pins IC1-4)
+    )
+    (net "Net-(IC1-Pad6)"
+      (pins IC1-6 P3-1)
+    )
+    (net "Net-(P1-Pad1)"
+      (pins P1-1 Q1-2)
+    )
+    (net "Net-(P1-Pad2)"
+      (pins P1-2 P2-2)
+    )
+    (net "Net-(P1-Pad3)"
+      (pins P1-3 P2-3)
+    )
+    (net "Net-(P1-Pad4)"
+      (pins P1-4)
+    )
+    (net "Net-(P1-Pad5)"
+      (pins P1-5 P2-5)
+    )
+    (net "Net-(P1-Pad6)"
+      (pins P1-6 P1-6@1 P1-6@2 P1-6@3)
+    )
+    (net "Net-(P2-Pad1)"
+      (pins P2-1 Q1-3)
+    )
+    (net "Net-(P2-Pad4)"
+      (pins P2-4)
+    )
+    (net "Net-(P2-Pad6)"
+      (pins P2-6 P2-6@1 P2-6@2 P2-6@3)
+    )
+    (class kicad_default "" GND "Net-(IC1-Pad1)" "Net-(IC1-Pad3)" "Net-(IC1-Pad4)"
+      "Net-(IC1-Pad6)" "Net-(P1-Pad1)" "Net-(P1-Pad2)" "Net-(P1-Pad3)" "Net-(P1-Pad4)"
+      "Net-(P1-Pad5)" "Net-(P1-Pad6)" "Net-(P2-Pad1)" "Net-(P2-Pad4)" "Net-(P2-Pad6)"
+      VCC
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
