@@ -236,12 +236,12 @@ $EndComp
 $Comp
 L OPEN_HARDWARE_1 LOGO1
 U 1 1 55A8E646
-P 3150 2950
-F 0 "LOGO1" H 3150 3225 60  0001 C CNN
-F 1 "open hardware" H 3150 2725 60  0000 C CNN
-F 2 "w_logo:Logo_silk_OSHW_6x6mm" H 3150 2950 60  0001 C CNN
-F 3 "" H 3150 2950 60  0000 C CNN
-	1    3150 2950
+P 7450 4400
+F 0 "LOGO1" H 7450 4675 60  0001 C CNN
+F 1 "open hardware" H 7450 4175 60  0000 C CNN
+F 2 "w_logo:Logo_silk_OSHW_6x6mm" H 7450 4400 60  0001 C CNN
+F 3 "" H 7450 4400 60  0000 C CNN
+	1    7450 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -309,12 +309,12 @@ Wire Wire Line
 $Comp
 L unethische.org O1
 U 1 1 55A97520
-P 2500 2950
-F 0 "O1" H 2500 3150 197 0001 C CNN
-F 1 "unethische.org" H 2500 2750 30  0000 C CNN
-F 2 "jcgb:unethi_copper_silk" H 2500 2950 60  0001 C CNN
-F 3 "" H 2500 2950 60  0000 C CNN
-	1    2500 2950
+P 6900 4400
+F 0 "O1" H 6900 4600 197 0001 C CNN
+F 1 "unethische.org" H 6900 4200 30  0000 C CNN
+F 2 "jcgb:unethi_copper_silk" H 6900 4400 60  0001 C CNN
+F 3 "" H 6900 4400 60  0000 C CNN
+	1    6900 4400
 	1    0    0    -1  
 $EndComp
 Text Label 4850 2850 0    4    ~ 0
@@ -331,4 +331,17 @@ Text Label 4350 2000 0    4    ~ 0
 PSW
 Text Label 4350 2100 0    4    ~ 0
 VPP
+$Comp
+L Gnu_GPL LO?
+U 1 1 55BBDC0C
+P 6450 4400
+F 0 "LO?" H 6500 4750 60  0001 C CNN
+F 1 "Gnu_GPL" H 6450 4050 60  0001 C CNN
+F 2 "" H 6450 4400 60  0000 C CNN
+F 3 "" H 6450 4400 60  0000 C CNN
+	1    6450 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 3600 4600 0    60   ~ 0
+Automatically resets power to an USB device\nTiming can be set in software.
 $EndSCHEMATC
