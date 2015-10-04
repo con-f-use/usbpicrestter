@@ -50,7 +50,7 @@ encoding utf-8
 Sheet 1 1
 Title "usbpicresetter"
 Date "2015-07-20"
-Rev "0.2"
+Rev "0.3"
 Comp "con-f-use"
 Comment1 ""
 Comment2 ""

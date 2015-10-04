@@ -16,8 +16,9 @@
         |  nGPPU /* 6: no weak pullups */ \
         & ~T0CS  /* 5: internal clock */ \
         & ~T0SE  /* 4: incremnt low to high */ \
-        |  PSA   /* 3: prescale on wdt (Timer0 if bit cleared) */ )
+        |  PSA   /* 3: prescale for wdt (Timer0 if bit cleared) */ )
 #define WDT_2S    (PS2 | PS1 | PS0) // clock division by 128 (256 for Timer0)
+#define WDT_500MS (PS2 | PS0)       // clock division by  32
 
 void delay_s(long int s) {
     for(s=s; s>0; --s) {
